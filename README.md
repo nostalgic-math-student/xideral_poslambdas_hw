@@ -13,3 +13,5 @@ Para la lambda function **processPOSdata** la estrategia cambia: se ejecuta al r
 Esta activación está monitoreada mediante el trigger **S3 create event**, por lo que a la hora de subir un archivo el s3 final (xideralcinedata-processed) se actualiza correctamente.
 
 Se pueden mantener en activo ambas lambdas y no hay problema, este diseño permite tener a **processPOSdata** como principal método de manejo de datos, y relegar a **syncPOSdata** a un rol de seguro para siempre tener la información más reciente actualizada.
+
+Nota: los archivos en Lambda tienen el nombre estándar lambda_function.py, fue cambiado al subirlo para identificarlos entre sí.
