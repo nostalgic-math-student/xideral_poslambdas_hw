@@ -3,6 +3,7 @@
 - Josue Rojas Noble
 ## Tarea Sync POS <-> Infraestructura AWS
 
+### Idea
 Para esta tarea utilicé dos enfoques compatibles entre si: 
 
 para la lambda function **syncPOSdata** la estrategia es simple: al ejecutarse se hace un barrido del s3 deseado para extraer la información de cada archivo y resumirlo en un archivo summary.csv dado.
